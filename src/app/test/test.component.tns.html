@@ -1,1 +1,8 @@
-<Button text="test works!" class="btn btn-primary"></Button>
+<StackLayout>
+  <TextField
+    hint="Enter text here..."
+    [(ngModel)]="challengeDescription"
+  ></TextField>
+  <button class="btn" text="Set Challenge" (tap)="onSetChallenge()"></button>
+  <label class="title" [text]="currentChallenge"></label>
+</StackLayout>

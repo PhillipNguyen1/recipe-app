@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'ns-test',
-  templateUrl: './test.component.html',
-  styleUrls: ['./test.component.css']
+    selector: "ns-test",
+    templateUrl: "./test.component.html",
+    styleUrls: ["./test.component.css"],
 })
 export class TestComponent implements OnInit {
+    challengeDescription = "";
+    currentChallenge = "";
 
-  constructor() { }
+    constructor() {}
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {}
 
+    onSetChallenge() {
+        this.currentChallenge = this.challengeDescription;
+    }
 }
